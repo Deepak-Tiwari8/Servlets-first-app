@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  <welcome-file>first.html</welcome-file>
+  </welcome-file-list>
+  
+ <context-param>
+ <init-param>
+  <param-name>RoadTax</param-name>
+  <param-value>18.23</param-value>
+  </init-param>
+ </context-param>
+ 
+  <servlet>
+  <servlet-name>MyCar</servlet-name>
+  <servlet-class>com.ty.day2.Car</servlet-class>
+ <init-param>
+ <param-name>SeatBelt</param-name>
+ <param-value>yes</param-value>
+ </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyCar</servlet-name>
+  <url-pattern>/car</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyBike</servlet-name>
+  <servlet-class>com.ty.day2.Bike</servlet-class>
+ <init-param>
+ <param-name>Helmet</param-name>
+ <param-value>vega</param-value>
+ </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyBike</servlet-name>
+  <url-pattern>/bike</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
+
